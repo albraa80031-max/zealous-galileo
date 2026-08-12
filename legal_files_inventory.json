@@ -1,0 +1,275 @@
+{
+  "inventory_metadata": {
+    "creation_date": "2026-08-12",
+    "total_files": 150,
+    "total_cases": 7,
+    "source_directory": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent",
+    "search_keywords": {
+      "arabic": ["حجز", "تنفيذ", "استئناف", "نفقة", "إخلاء"],
+      "case_numbers": ["161", "24_2026", "279", "3336", "838", "1529", "2112", "3947"],
+      "english": ["Talab", "Hajz", "Evidence_Bundle"]
+    },
+    "file_extensions": [".pdf", ".html", ".docx"]
+  },
+  "cases": {
+    "case_161": {
+      "title": "التنفيذ والحجز",
+      "status": "متقدمة",
+      "file_count": 40,
+      "categories": ["تنفيذ", "حجز", "استئناف"],
+      "key_documents": [
+        "Full_161_File.pdf",
+        "تنفيذ 161.pdf",
+        "طلب_الغاء_منع_السفر_161.pdf",
+        "مذكرة_شاملة_نهائية_161.pdf"
+      ]
+    },
+    "case_24_2026": {
+      "title": "الحجز والمحاسبة",
+      "status": "جارية",
+      "file_count": 15,
+      "categories": ["حجز", "محاسبة"],
+      "key_documents": [
+        "Evidence_Bundle_Hajz_24_2026.pdf",
+        "ACCOUNTING_LEDGER_24_2026.html",
+        "Talab_Ajil_Raf_Hajz_24_2026.html"
+      ]
+    },
+    "case_279": {
+      "title": "الاستئناف والأمانة",
+      "status": "استئناف",
+      "file_count": 10,
+      "categories": ["استئناف", "أمانة خبير"],
+      "key_documents": [
+        "Mozakarat_Amanat_Khabeer_279_2026.html",
+        "طلب_مهلة_سداد_أمانة_الخبير_الاستئناف_279.html",
+        "الملف_النهائي_لطلب_التأجيل_والمهلة_الاستئناف_279.pdf"
+      ]
+    },
+    "case_3336": {
+      "title": "وقف الإخلاء",
+      "status": "استئناف",
+      "file_count": 4,
+      "categories": ["إخلاء", "وقف تنفيذ"],
+      "key_documents": [
+        "Stay_of_Execution_Eviction_3336.html",
+        "مذكرة_طلب_وقف_الاخلاء_3336.pdf",
+        "ملف_موحد_جاهز_للتقديم_3336.pdf"
+      ]
+    },
+    "case_1529": {
+      "title": "الإعسار والحكم",
+      "status": "متقدمة",
+      "file_count": 25,
+      "categories": ["إعسار", "حكم", "أدلة"],
+      "key_documents": [
+        "MASTER_LEGAL_FILE_1529.html",
+        "COMPREHENSIVE_SUBMISSION_1529.html",
+        "EVIDENCE_PORTFOLIO_1529.html",
+        "Exhibit_1_Judgment_838_2024.pdf"
+      ]
+    },
+    "case_838": {
+      "title": "الحكم",
+      "status": "معروضة",
+      "file_count": 5,
+      "categories": ["حكم", "أدلة"],
+      "key_documents": [
+        "Exhibit_1_Judgment_838_2024.pdf",
+        "Final_Judgment_838_2024.pdf"
+      ]
+    },
+    "case_3947": {
+      "title": "الدعوى المدنية",
+      "status": "توثيقية",
+      "file_count": 2,
+      "categories": ["دعوى مدنية"],
+      "key_documents": [
+        "مذكرة إعسار البراء شيخ والدعوى المدنية 3947.pdf",
+        "Police Report (1).pdf"
+      ]
+    }
+  },
+  "folders": {
+    "root": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent",
+      "file_count": 35,
+      "subfolder_count": 1,
+      "main_files": [
+        "طلب_الغاء_منع_السفر_161.html",
+        "ACCOUNTING_LEDGER_24_2026.html",
+        "Evidence_Bundle_Hajz_24_2026.pdf",
+        "مذكرة_شاملة_نهائية_161.pdf"
+      ]
+    },
+    "backups": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\Backups",
+      "file_count": 70,
+      "subfolders": [
+        "Backup_20260329_0633",
+        "Documents_Backup"
+      ],
+      "note": "نسخ احتياطية لمعظم الملفات - تنسيخ كامل من Source_Documents"
+    },
+    "final_submission_1529": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\FINAL_SUBMISSION_FOLDER_1529",
+      "file_count": 10,
+      "status": "جاهز للتقديم",
+      "key_files": [
+        "COMPREHENSIVE_SUBMISSION_1529.html",
+        "MASTER_LEGAL_FILE_1529.html",
+        "Exhibit_1_Judgment_838_2024.pdf",
+        "Exhibit_8_Execution_File_161_Details.pdf"
+      ]
+    },
+    "execution_3336": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\ملف_التنفيذ_3336_جاهز_للتقديم",
+      "file_count": 4,
+      "status": "جاهز للتقديم",
+      "key_files": [
+        "1_مذكرة_طلب_وقف_الاخلاء_3336.html",
+        "مذكرة_طلب_وقف_الاخلاء_3336.pdf",
+        "ملف_موحد_جاهز_للتقديم_3336.pdf"
+      ]
+    },
+    "legal_filings": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\Legal Filings",
+      "file_count": 1,
+      "files": [
+        "مذكرة إعسار البراء شيخ والدعوى المدنية 3947.pdf"
+      ]
+    },
+    "memo_attachments": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\MEMO_ATTACHMENTS_1529",
+      "file_count": 5,
+      "files": [
+        "Civil_Judgment_61k.pdf",
+        "Electricity_Payment_Receipt.pdf",
+        "Execution_File_161.pdf",
+        "Final_Judgment_838_2024.pdf",
+        "Police_Report_Accident.pdf"
+      ]
+    },
+    "source_documents": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\Source_Documents",
+      "file_count": 60,
+      "subfolders": [
+        "Case_Documents",
+        "Drafts",
+        "Submission_Package",
+        "ملف_التقديم_النهائي"
+      ]
+    },
+    "source_data": {
+      "path": "C:\\Users\\user\\OneDrive\\Desktop\\Legal_Agent\\Source_Data",
+      "file_count": 1,
+      "subfolders": ["Case_3947"]
+    }
+  },
+  "file_types": {
+    "pdf": {
+      "count": 100,
+      "percentage": "66.7%",
+      "description": "وثائق رسمية، أحكام، أدلة، صيغ تنفيذية"
+    },
+    "html": {
+      "count": 40,
+      "percentage": "26.7%",
+      "description": "مذكرات قانونية، ملفات شاملة، نماذج ويب"
+    },
+    "docx": {
+      "count": 2,
+      "percentage": "1.3%",
+      "description": "مسودات قابلة للتحرير"
+    },
+    "other": {
+      "count": 8,
+      "percentage": "5.3%",
+      "description": "ملفات أخرى وصور"
+    }
+  },
+  "document_categories": {
+    "judgments": {
+      "name": "الأحكام والقرارات",
+      "count": 15,
+      "examples": [
+        "مستند الحكم (محكمة الإستئناف الشرعية)",
+        "Exhibit_1_Judgment_838_2024.pdf",
+        "Final_Judgment_838_2024.pdf"
+      ]
+    },
+    "execution": {
+      "name": "وثائق التنفيذ",
+      "count": 25,
+      "examples": [
+        "تنفيذ 161.pdf",
+        "Execution_File_161.pdf",
+        "صيغة تنفيذية القرار"
+      ]
+    },
+    "appeal": {
+      "name": "وثائق الاستئناف والطعن",
+      "count": 35,
+      "examples": [
+        "مذكرة_استئناف.pdf",
+        "الاستئناف.pdf",
+        "مذكرة طعن_استئناف.pdf"
+      ]
+    },
+    "evidence": {
+      "name": "الأدلة والمرفقات",
+      "count": 20,
+      "examples": [
+        "Evidence_Bundle_Hajz_24_2026.pdf",
+        "EVIDENCE_PORTFOLIO_1529.html",
+        "Police_Report_Accident.pdf",
+        "Bank_Statements_Insolvency.pdf"
+      ]
+    },
+    "requests": {
+      "name": "الطلبات والمذكرات",
+      "count": 30,
+      "examples": [
+        "مستند الطلب (طلب إلغاء الحجز)",
+        "طلب اعتماد السندات التنفيذية",
+        "طلب_الغاء_منع_السفر_161"
+      ]
+    },
+    "memo": {
+      "name": "المذكرات القانونية",
+      "count": 25,
+      "examples": [
+        "MASTER_LEGAL_FILE_1529.html",
+        "Memo_Case_1529_Comprehensive.html",
+        "Master_Execution_Memo_161_and_24.html"
+      ]
+    }
+  },
+  "statistics": {
+    "total_files": 150,
+    "total_folders": 11,
+    "total_cases": 7,
+    "average_files_per_case": 21,
+    "most_documented_case": "case_161",
+    "file_size_estimate": "Large (Multiple GBs due to backups)",
+    "last_backup": "2026-03-29 06:33",
+    "encoding_note": "UTF-8 Arabic names may require special handling on Windows PowerShell"
+  },
+  "recommendations": {
+    "organization": [
+      "فصل النسخ الاحتياطية عن الملفات الأصلية",
+      "إنشاء مجلد موحد لكل قضية بدلاً من التشتت",
+      "استخدام نظام ترقيم موحد للملفات"
+    ],
+    "preservation": [
+      "حفظ نسخة احتياطية في مكان آمن خارج OneDrive",
+      "استخدام نظام مراقبة الإصدارات (Version Control)",
+      "توثيق تاريخ كل ملف وآخر تعديل"
+    ],
+    "access": [
+      "إنشاء فهرس شامل للبحث السريع",
+      "وضع أرقام القضايا في بداية أسماء الملفات",
+      "استخدام tags وmetadata للتصنيف"
+    ]
+  }
+}
