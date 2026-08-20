@@ -6,6 +6,7 @@ Enhanced Legal Agent Web Application with Google Drive Integration
 
 import json
 import logging
+import os
 from datetime import datetime
 
 from flask import Flask, jsonify, render_template, request
@@ -348,7 +349,14 @@ def internal_error(error):
 
 if __name__ == "__main__":
     logger.info("🚀 Starting Legal Agent Web Application with Google Drive Sync")
-    logger.info("📱 Open http://localhost:5000 in your browser")
-    logger.info("☁️  Google Drive integration is active")
 
-    app.run(debug=True, port=5000)
+    # قراءة المنفذ من متغير البيئة (للبيئة السحابية) أو استخدام 5000 كقيمة افتراضية
+    port = int(os.environ.get("PORT", 5000))
+    debug_mode = os.environ.get("FLASK_ENV", "development") == "development"
+
+    logger.info(f"📱 Open http://localhost:{port} in your browser")
+    logger.info("☁️  Google Drive integration is active")
+    logger.info(f"🔧 Running in {'development' if debug_mode else 'production'} mode")
+
+    # في الإنتاج، debug يجب أن يكون False
+    app.run(debug=debug_mode, host="0.0.0.0", port=port)
