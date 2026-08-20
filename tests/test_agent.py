@@ -2,9 +2,11 @@
 اختبارات وحدة Legal Agent
 """
 
-import pytest
 import json
 from pathlib import Path
+
+import pytest
+
 from legal_agent.agent import LegalAgent
 
 

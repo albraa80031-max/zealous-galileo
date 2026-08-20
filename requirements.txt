@@ -28,5 +28,5 @@ pylint==3.0.3
 isort==5.13.2
 
 # Development
-ipython==8.19.0
+ipython==8.18.0
 ipdb==0.13.13
