@@ -50,18 +50,17 @@ class GitHubSync:
             "body": body,
             "labels": labels or [],
             "created_at": datetime.now().isoformat(),
-            "state": "open"
+            "state": "open",
         }
-        self.sync_log.append({
-            "action": "create_issue",
-            "issue": issue,
-            "timestamp": datetime.now().isoformat()
-        })
+        self.sync_log.append(
+            {"action": "create_issue", "issue": issue, "timestamp": datetime.now().isoformat()}
+        )
         logger.info(f"تم إنشاء issue: {title}")
         return issue
 
-    def update_issue(self, issue_number: int, title: str = None, body: str = None,
-                    state: str = None) -> Dict:
+    def update_issue(
+        self, issue_number: int, title: str = None, body: str = None, state: str = None
+    ) -> Dict:
         """
         تحديث issue على GitHub
 
@@ -74,10 +73,7 @@ class GitHubSync:
         Returns:
             معلومات الـ issue المُحدثة
         """
-        update = {
-            "issue_number": issue_number,
-            "updates": {}
-        }
+        update = {"issue_number": issue_number, "updates": {}}
         if title:
             update["updates"]["title"] = title
         if body:
@@ -85,11 +81,9 @@ class GitHubSync:
         if state:
             update["updates"]["state"] = state
 
-        self.sync_log.append({
-            "action": "update_issue",
-            "update": update,
-            "timestamp": datetime.now().isoformat()
-        })
+        self.sync_log.append(
+            {"action": "update_issue", "update": update, "timestamp": datetime.now().isoformat()}
+        )
         logger.info(f"تم تحديث issue #{issue_number}")
         return update
 
@@ -109,13 +103,11 @@ class GitHubSync:
             "path": path,
             "content": content,
             "message": message,
-            "created_at": datetime.now().isoformat()
+            "created_at": datetime.now().isoformat(),
         }
-        self.sync_log.append({
-            "action": "create_file",
-            "file": file_info,
-            "timestamp": datetime.now().isoformat()
-        })
+        self.sync_log.append(
+            {"action": "create_file", "file": file_info, "timestamp": datetime.now().isoformat()}
+        )
         logger.info(f"تم إنشاء ملف: {path}")
         return file_info
 
@@ -135,13 +127,11 @@ class GitHubSync:
             "path": path,
             "content": content,
             "message": message,
-            "updated_at": datetime.now().isoformat()
+            "updated_at": datetime.now().isoformat(),
         }
-        self.sync_log.append({
-            "action": "update_file",
-            "file": file_info,
-            "timestamp": datetime.now().isoformat()
-        })
+        self.sync_log.append(
+            {"action": "update_file", "file": file_info, "timestamp": datetime.now().isoformat()}
+        )
         logger.info(f"تم تحديث ملف: {path}")
         return file_info
 
@@ -161,25 +151,17 @@ class GitHubSync:
             self.create_file(
                 "data/legal_data.json",
                 data_content,
-                "تحديث بيانات Legal Agent - البيانات القانونية"
+                "تحديث بيانات Legal Agent - البيانات القانونية",
             )
 
             # إنشاء ملفات منفصلة للقضايا والعقود
             if "cases" in data:
                 cases_content = json.dumps(data["cases"], ensure_ascii=False, indent=2)
-                self.create_file(
-                    "data/cases.json",
-                    cases_content,
-                    "تحديث قائمة القضايا"
-                )
+                self.create_file("data/cases.json", cases_content, "تحديث قائمة القضايا")
 
             if "contracts" in data:
                 contracts_content = json.dumps(data["contracts"], ensure_ascii=False, indent=2)
-                self.create_file(
-                    "data/contracts.json",
-                    contracts_content,
-                    "تحديث قائمة العقود"
-                )
+                self.create_file("data/contracts.json", contracts_content, "تحديث قائمة العقود")
 
             logger.info("تمت المزامنة بنجاح مع GitHub")
             return True
@@ -210,5 +192,5 @@ class GitHubSync:
             "url": self.repo_url,
             "owner": self.repo_owner,
             "name": self.repo_name,
-            "sync_enabled": True
+            "sync_enabled": True,
         }

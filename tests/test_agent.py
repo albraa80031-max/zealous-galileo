@@ -27,11 +27,7 @@ class TestLegalAgent:
 
     def test_add_case(self, agent):
         """اختبار إضافة قضية"""
-        case = agent.add_case(
-            "CASE001",
-            "قضية عقد موظف",
-            "نزاع حول شروط العقد"
-        )
+        case = agent.add_case("CASE001", "قضية عقد موظف", "نزاع حول شروط العقد")
         assert case["id"] == "CASE001"
         assert case["title"] == "قضية عقد موظف"
         assert case["status"] == "active"
@@ -40,10 +36,7 @@ class TestLegalAgent:
     def test_add_contract(self, agent):
         """اختبار إضافة عقد"""
         contract = agent.add_contract(
-            "CONTRACT001",
-            "عقد عمل",
-            "هذا عقد عمل بين الطرفين",
-            ["الشركة", "الموظف"]
+            "CONTRACT001", "عقد عمل", "هذا عقد عمل بين الطرفين", ["الشركة", "الموظف"]
         )
         assert contract["id"] == "CONTRACT001"
         assert contract["title"] == "عقد عمل"
@@ -52,12 +45,7 @@ class TestLegalAgent:
 
     def test_add_document(self, agent):
         """اختبار إضافة وثيقة"""
-        doc = agent.add_document(
-            "DOC001",
-            "تقرير قانوني",
-            "هذا تقرير قانوني شامل",
-            "report"
-        )
+        doc = agent.add_document("DOC001", "تقرير قانوني", "هذا تقرير قانوني شامل", "report")
         assert doc["id"] == "DOC001"
         assert doc["type"] == "report"
         assert len(agent.documents) == 1

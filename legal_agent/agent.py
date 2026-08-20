@@ -44,7 +44,7 @@ class LegalAgent:
             "repo_owner": "",
             "repo_name": "",
             "auto_sync": True,
-            "sync_interval": 3600
+            "sync_interval": 3600,
         }
 
     def add_case(self, case_id: str, title: str, description: str, status: str = "active") -> Dict:
@@ -56,14 +56,15 @@ class LegalAgent:
             "status": status,
             "created_at": datetime.now().isoformat(),
             "updated_at": datetime.now().isoformat(),
-            "documents": []
+            "documents": [],
         }
         self.cases.append(case)
         logger.info(f"تمت إضافة القضية: {case_id}")
         return case
 
-    def add_contract(self, contract_id: str, title: str, content: str,
-                    parties: List[str], status: str = "draft") -> Dict:
+    def add_contract(
+        self, contract_id: str, title: str, content: str, parties: List[str], status: str = "draft"
+    ) -> Dict:
         """إضافة عقد جديد"""
         contract = {
             "id": contract_id,
@@ -72,7 +73,7 @@ class LegalAgent:
             "parties": parties,
             "status": status,
             "created_at": datetime.now().isoformat(),
-            "updated_at": datetime.now().isoformat()
+            "updated_at": datetime.now().isoformat(),
         }
         self.contracts.append(contract)
         logger.info(f"تمت إضافة العقد: {contract_id}")
@@ -86,7 +87,7 @@ class LegalAgent:
             "content": content,
             "type": doc_type,
             "created_at": datetime.now().isoformat(),
-            "updated_at": datetime.now().isoformat()
+            "updated_at": datetime.now().isoformat(),
         }
         self.documents.append(doc)
         logger.info(f"تمت إضافة الوثيقة: {doc_id}")
@@ -127,7 +128,7 @@ class LegalAgent:
                 "cases": self.cases,
                 "contracts": self.contracts,
                 "documents": self.documents,
-                "exported_at": datetime.now().isoformat()
+                "exported_at": datetime.now().isoformat(),
             }
             output_file = Path(output_path)
             output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -160,5 +161,5 @@ class LegalAgent:
             "total_contracts": len(self.contracts),
             "total_documents": len(self.documents),
             "active_cases": len([c for c in self.cases if c["status"] == "active"]),
-            "draft_contracts": len([c for c in self.contracts if c["status"] == "draft"])
+            "draft_contracts": len([c for c in self.contracts if c["status"] == "draft"]),
         }
