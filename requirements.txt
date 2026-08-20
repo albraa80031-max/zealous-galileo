@@ -27,6 +27,9 @@ flake8==6.1.0
 pylint==3.0.3
 isort==5.13.2
 
+# Web Framework
+Flask==3.0.0
+
 # Development
 ipython==8.18.0
 ipdb==0.13.13
