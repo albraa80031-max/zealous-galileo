@@ -42,12 +42,14 @@ class GoogleDriveSync:
             ├── Documents (الوثائق)
             └── Backups (النسخ الاحتياطية)
         """
-        self.sync_log.append({
-            "timestamp": datetime.now().isoformat(),
-            "action": "create_folder_structure",
-            "status": "pending",
-            "details": f"Creating folder structure in Google Drive"
-        })
+        self.sync_log.append(
+            {
+                "timestamp": datetime.now().isoformat(),
+                "action": "create_folder_structure",
+                "status": "pending",
+                "details": f"Creating folder structure in Google Drive",
+            }
+        )
 
         logger.info(f"Creating folder structure: {self.folder_name}")
         # سيتم تنفيذه من قبل التطبيق الرئيسي
@@ -68,14 +70,13 @@ class GoogleDriveSync:
             cases_json = json.dumps(
                 {"cases": cases_data, "last_updated": datetime.now().isoformat()},
                 ensure_ascii=False,
-                indent=2
+                indent=2,
             )
 
             logger.info(f"Uploading {len(cases_data)} cases to Google Drive")
-            self._log_sync("upload_cases", "completed", {
-                "count": len(cases_data),
-                "size": len(cases_json)
-            })
+            self._log_sync(
+                "upload_cases", "completed", {"count": len(cases_data), "size": len(cases_json)}
+            )
             return True
 
         except Exception as e:
@@ -99,14 +100,15 @@ class GoogleDriveSync:
             contracts_json = json.dumps(
                 {"contracts": contracts_data, "last_updated": datetime.now().isoformat()},
                 ensure_ascii=False,
-                indent=2
+                indent=2,
             )
 
             logger.info(f"Uploading {len(contracts_data)} contracts to Google Drive")
-            self._log_sync("upload_contracts", "completed", {
-                "count": len(contracts_data),
-                "size": len(contracts_json)
-            })
+            self._log_sync(
+                "upload_contracts",
+                "completed",
+                {"count": len(contracts_data), "size": len(contracts_json)},
+            )
             return True
 
         except Exception as e:
@@ -130,14 +132,15 @@ class GoogleDriveSync:
             documents_json = json.dumps(
                 {"documents": documents_data, "last_updated": datetime.now().isoformat()},
                 ensure_ascii=False,
-                indent=2
+                indent=2,
             )
 
             logger.info(f"Uploading {len(documents_data)} documents to Google Drive")
-            self._log_sync("upload_documents", "completed", {
-                "count": len(documents_data),
-                "size": len(documents_json)
-            })
+            self._log_sync(
+                "upload_documents",
+                "completed",
+                {"count": len(documents_data), "size": len(documents_json)},
+            )
             return True
 
         except Exception as e:
@@ -175,9 +178,11 @@ class GoogleDriveSync:
                 "total_cases": len(agent.cases),
                 "total_contracts": len(agent.contracts),
                 "total_documents": len(agent.documents),
-                "sync_status": "completed" if all([
-                    cases_success, contracts_success, documents_success
-                ]) else "partial"
+                "sync_status": (
+                    "completed"
+                    if all([cases_success, contracts_success, documents_success])
+                    else "partial"
+                ),
             }
 
             self.last_sync = summary
@@ -213,18 +218,19 @@ class GoogleDriveSync:
                     "total_cases": len(agent.cases),
                     "total_contracts": len(agent.contracts),
                     "total_documents": len(agent.documents),
-                    "backup_version": "1.0"
-                }
+                    "backup_version": "1.0",
+                },
             }
 
             backup_json = json.dumps(backup_data, ensure_ascii=False, indent=2)
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
             logger.info(f"Creating backup: backup_{timestamp}.json")
-            self._log_sync("create_backup", "completed", {
-                "backup_file": f"backup_{timestamp}.json",
-                "size": len(backup_json)
-            })
+            self._log_sync(
+                "create_backup",
+                "completed",
+                {"backup_file": f"backup_{timestamp}.json", "size": len(backup_json)},
+            )
 
             return backup_data
 
@@ -244,9 +250,7 @@ class GoogleDriveSync:
 
         try:
             logger.info("Downloading data from Google Drive")
-            self._log_sync("download_from_drive", "completed", {
-                "status": "ready_for_sync"
-            })
+            self._log_sync("download_from_drive", "completed", {"status": "ready_for_sync"})
             return {}
 
         except Exception as e:
@@ -265,7 +269,7 @@ class GoogleDriveSync:
             "last_sync": self.last_sync,
             "total_operations": len(self.sync_log),
             "recent_operations": self.sync_log[-5:] if self.sync_log else [],
-            "status": "synced" if self.last_sync else "not_synced"
+            "status": "synced" if self.last_sync else "not_synced",
         }
 
     def export_sync_log(self, filepath: str = "sync_log.json") -> bool:
@@ -279,7 +283,7 @@ class GoogleDriveSync:
             bool: نجاح العملية
         """
         try:
-            with open(filepath, 'w', encoding='utf-8') as f:
+            with open(filepath, "w", encoding="utf-8") as f:
                 json.dump(self.sync_log, f, ensure_ascii=False, indent=2)
             logger.info(f"Sync log exported to {filepath}")
             return True
@@ -321,9 +325,9 @@ class GoogleDriveSync:
                 "Cases": "جميع البيانات المتعلقة بالقضايا",
                 "Contracts": "جميع البيانات المتعلقة بالعقود",
                 "Documents": "جميع الوثائق المرتبطة",
-                "Backups": "النسخ الاحتياطية التاريخية"
+                "Backups": "النسخ الاحتياطية التاريخية",
             },
-            "sync_status": self.get_sync_status()
+            "sync_status": self.get_sync_status(),
         }
 
 
@@ -394,6 +398,6 @@ class DriveIntegrationManager:
             "agent_data": {
                 "cases": len(self.agent.cases),
                 "contracts": len(self.agent.contracts),
-                "documents": len(self.agent.documents)
-            }
+                "documents": len(self.agent.documents),
+            },
         }
