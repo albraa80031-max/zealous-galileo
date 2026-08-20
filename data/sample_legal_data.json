@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "id": "CASE_2026_001",
+      "title": "قضية عقد عمل - عدم الامتثال للشروط",
+      "description": "نزاع بين الموظف والشركة حول الامتثال لشروط العقد الموقعة",
+      "status": "active",
+      "created_at": "2026-01-15T10:30:00",
+      "updated_at": "2026-08-20T12:00:00",
+      "parties": ["شركة الإمارات للتطوير", "أحمد محمد علي"],
+      "documents": ["DOC_2026_001", "DOC_2026_002"],
+      "priority": "high",
+      "notes": "قضية مهمة تتطلب متابعة دقيقة"
+    },
+    {
+      "id": "CASE_2026_002",
+      "title": "نزاع تجاري - عدم الوفاء بالالتزامات",
+      "description": "خلاف حول تنفيذ عقد توريد السلع",
+      "status": "pending",
+      "created_at": "2026-03-20T14:15:00",
+      "updated_at": "2026-08-18T09:30:00",
+      "parties": ["شركة الخليج للتجارة", "مصنع البحرين للإنتاج"],
+      "documents": ["DOC_2026_003", "DOC_2026_004"],
+      "priority": "medium",
+      "notes": "في انتظار توضيحات من الطرف الثاني"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "CONTRACT_2026_001",
+      "title": "عقد عمل - موظف إداري",
+      "status": "active",
+      "parties": ["شركة الإمارات للتطوير", "أحمد محمد علي"],
+      "created_at": "2025-06-10T08:00:00",
+      "updated_at": "2026-08-20T12:00:00",
+      "terms": {
+        "duration": "2 سنة",
+        "salary": 5000,
+        "currency": "AED",
+        "start_date": "2025-06-10",
+        "end_date": "2027-06-10"
+      },
+      "documents": ["DOC_2026_005"]
+    },
+    {
+      "id": "CONTRACT_2026_002",
+      "title": "عقد توريد السلع",
+      "status": "draft",
+      "parties": ["شركة الخليج للتجارة", "مصنع البحرين للإنتاج"],
+      "created_at": "2026-07-01T10:30:00",
+      "updated_at": "2026-08-19T16:45:00",
+      "terms": {
+        "duration": "1 سنة",
+        "value": 100000,
+        "currency": "AED",
+        "start_date": "2026-09-01"
+      },
+      "documents": ["DOC_2026_006", "DOC_2026_007"]
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC_2026_001",
+      "title": "نسخة من عقد التوظيف الأصلي",
+      "type": "contract",
+      "related_case": "CASE_2026_001",
+      "created_at": "2026-01-15T10:30:00",
+      "status": "filed"
+    },
+    {
+      "id": "DOC_2026_002",
+      "title": "رسالة الشكوى من الموظف",
+      "type": "correspondence",
+      "related_case": "CASE_2026_001",
+      "created_at": "2026-01-20T14:20:00",
+      "status": "filed"
+    },
+    {
+      "id": "DOC_2026_003",
+      "title": "فاتورة الشحنة الأولى",
+      "type": "invoice",
+      "related_case": "CASE_2026_002",
+      "created_at": "2026-04-10T09:15:00",
+      "status": "filed"
+    },
+    {
+      "id": "DOC_2026_004",
+      "title": "شهادة الاستلام والرفض",
+      "type": "report",
+      "related_case": "CASE_2026_002",
+      "created_at": "2026-04-25T11:45:00",
+      "status": "filed"
+    }
+  ],
+  "metadata": {
+    "exported_at": "2026-08-20T12:00:00",
+    "total_active_cases": 1,
+    "total_pending_cases": 1,
+    "total_active_contracts": 1,
+    "total_documents": 4
+  }
+}
