@@ -1,0 +1,51 @@
+{
+  "cases": [
+    {
+      "id": "CASE_2026_001",
+      "title": "قضية عقد عمل - عدم الامتثال للشروط",
+      "description": "نزاع بين الموظف والشركة حول الامتثال لشروط العقد الموقعة",
+      "status": "active",
+      "priority": "high",
+      "created_at": "2026-01-15T10:30:00",
+      "updated_at": "2026-08-20T12:00:00",
+      "parties": [
+        "شركة الإمارات للتطوير",
+        "أحمد محمد علي"
+      ],
+      "documents": [
+        "DOC_2026_001",
+        "DOC_2026_002"
+      ],
+      "notes": "قضية مهمة تتطلب متابعة دقيقة",
+      "category": "employment",
+      "next_hearing": null
+    },
+    {
+      "id": "CASE_2026_002",
+      "title": "نزاع تجاري - عدم الوفاء بالالتزامات",
+      "description": "خلاف حول تنفيذ عقد توريد السلع",
+      "status": "pending",
+      "priority": "medium",
+      "created_at": "2026-03-20T14:15:00",
+      "updated_at": "2026-08-18T09:30:00",
+      "parties": [
+        "شركة الخليج للتجارة",
+        "مصنع البحرين للإنتاج"
+      ],
+      "documents": [
+        "DOC_2026_003",
+        "DOC_2026_004"
+      ],
+      "notes": "في انتظار توضيحات من الطرف الثاني",
+      "category": "commercial",
+      "next_hearing": null
+    }
+  ],
+  "metadata": {
+    "total_cases": 2,
+    "active_cases": 1,
+    "pending_cases": 1,
+    "closed_cases": 0,
+    "last_updated": "2026-08-20T12:00:00"
+  }
+}
