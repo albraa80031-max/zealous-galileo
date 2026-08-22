@@ -1,0 +1,88 @@
+# Universal Agent Requirements
+# وكيل إدارة المهام الشامل - المكتبات المطلوبة
+
+# HTTP و APIs
+requests>=2.28.0
+httplib2>=0.22.0
+
+# Configuration و Environment
+python-dotenv>=0.20.0
+pyyaml>=6.0
+
+# Scheduling و Time
+schedule>=1.1.9
+pytz>=2022.7
+python-dateutil>=2.8.2
+
+# PDF Processing
+pdfplumber>=0.7.0
+PyPDF2>=3.0.1
+pdf2image>=1.16.3
+pytesseract>=0.3.10
+
+# Image Processing
+Pillow>=9.0.0
+opencv-python>=4.6.0
+
+# Data Processing
+pandas>=1.5.0
+openpyxl>=3.8.0
+xlrd>=2.0.1
+numpy>=1.23.0
+
+# Database
+sqlite3-python>=1.0.0
+sqlalchemy>=2.0.0
+
+# Google Services
+google-auth>=2.16.0
+google-auth-oauthlib>=0.6.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.70.0
+google-cloud-storage>=2.9.0
+
+# Email
+secure-smtplib>=0.1.1
+imapclient>=2.3.1
+
+# Logging و Monitoring
+python-json-logger>=2.0.4
+
+# CLI و Interactive
+click>=8.1.3
+tabulate>=0.9.0
+colorama>=0.4.6
+
+# Data Serialization
+msgpack>=1.0.4
+protobuf>=3.20.0
+
+# Compression
+zipfile-deflate64>=0.2.0
+
+# Testing
+pytest>=7.2.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.20.0
+
+# Code Quality
+flake8>=5.0.0
+black>=22.12.0
+pylint>=2.15.0
+
+# Documentation
+sphinx>=5.3.0
+sphinx-rtd-theme>=1.1.1
+
+# Optional - Chat و Communication
+slack-sdk>=3.19.0
+python-telegram-bot>=20.0
+
+# Optional - Advanced Features
+asyncio-contextmanager>=1.0.0
+aiohttp>=3.8.3
+websockets>=10.4
+
+# Development
+ipython>=8.8.0
+jupyter>=1.0.0
