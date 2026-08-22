@@ -1,0 +1,163 @@
+{
+  "store_info": {
+    "name": "Vantory Store",
+    "url": "uk1msh-1p.myshopify.com",
+    "currency": "SAR",
+    "timezone": "Asia/Riyadh",
+    "language": "ar"
+  },
+  "products": [
+    {
+      "id": "VT-SHIELD",
+      "name": "Vantory Shield | المحفظة الذكية الفاخرة",
+      "description": "محفظة فاخرة مع حماية RFID و GPS",
+      "base_price": 299.00,
+      "compare_price": 450.00,
+      "profit_margin": 0.50,
+      "variants": ["Black", "Silver", "Brown"]
+    },
+    {
+      "id": "VT-SLIM",
+      "name": "Vantory Slim | المحفظة الرقيقة",
+      "description": "محفظة رقيقة وخفيفة بتصميم مينيمالي",
+      "base_price": 199.00,
+      "compare_price": 299.00,
+      "profit_margin": 0.45,
+      "variants": ["Grey", "Black"]
+    }
+  ],
+  "operations": {
+    "daily_tasks": {
+      "process_orders": {
+        "enabled": true,
+        "frequency": "every_hour",
+        "priority": "high"
+      },
+      "send_confirmations": {
+        "enabled": true,
+        "frequency": "immediate",
+        "priority": "high"
+      },
+      "check_inventory": {
+        "enabled": true,
+        "frequency": "every_6_hours",
+        "low_stock_threshold": 20
+      },
+      "generate_daily_report": {
+        "enabled": true,
+        "time": "23:00",
+        "send_email": true,
+        "recipients": ["admin@vantory.local"]
+      }
+    },
+    "order_processing": {
+      "auto_confirmation": true,
+      "confirmation_delay": 5,
+      "confirmation_email_template": "vantory_confirmation.html",
+      "track_shipping": true,
+      "shipping_notification": true
+    },
+    "inventory_management": {
+      "auto_update": true,
+      "sync_with_shopify": true,
+      "low_stock_alert": true,
+      "alert_threshold": 20,
+      "reorder_point": 50
+    },
+    "customer_service": {
+      "auto_reply": true,
+      "reply_delay_minutes": 5,
+      "categorize_inquiries": true,
+      "priority_keywords": ["شكوى", "complaint", "urgent"],
+      "support_email": "support@vantory.local"
+    }
+  },
+  "notifications": {
+    "email": {
+      "enabled": true,
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587,
+      "notifications": [
+        {
+          "type": "low_inventory",
+          "recipients": ["admin@vantory.local"],
+          "frequency": "daily"
+        },
+        {
+          "type": "new_order",
+          "recipients": ["admin@vantory.local"],
+          "frequency": "immediate"
+        },
+        {
+          "type": "daily_report",
+          "recipients": ["admin@vantory.local"],
+          "frequency": "daily",
+          "time": "09:00"
+        }
+      ]
+    },
+    "sms": {
+      "enabled": false,
+      "api_key": "",
+      "alert_types": ["urgent_order", "high_value_order"]
+    },
+    "push": {
+      "enabled": true,
+      "alert_types": ["order_completed", "low_inventory"]
+    }
+  },
+  "analytics": {
+    "track_sales": true,
+    "track_revenue": true,
+    "track_customer_satisfaction": true,
+    "generate_reports": {
+      "daily": true,
+      "weekly": true,
+      "monthly": true
+    },
+    "export_format": ["json", "csv", "pdf"],
+    "store_history": true,
+    "history_retention_days": 365
+  },
+  "integrations": {
+    "shopify": {
+      "enabled": true,
+      "api_version": "2024-01",
+      "sync_interval": "every_30_minutes"
+    },
+    "email": {
+      "enabled": true,
+      "providers": ["gmail", "outlook"]
+    },
+    "payment_gateway": {
+      "enabled": true,
+      "automatic_settlement": true
+    },
+    "shipping": {
+      "enabled": true,
+      "auto_generate_labels": true,
+      "notify_customer": true
+    }
+  },
+  "security": {
+    "enable_encryption": true,
+    "backup_enabled": true,
+    "backup_frequency": "daily",
+    "backup_retention_days": 30,
+    "log_all_activities": true,
+    "api_key_required": true
+  },
+  "performance": {
+    "max_concurrent_orders": 50,
+    "batch_process": true,
+    "cache_enabled": true,
+    "cache_ttl_minutes": 30
+  },
+  "alerts": {
+    "high_order_value_threshold": 1000,
+    "suspicious_order_threshold": 5000,
+    "inventory_critical_level": 10,
+    "daily_target_orders": 10,
+    "daily_target_revenue": 3000
+  }
+}
