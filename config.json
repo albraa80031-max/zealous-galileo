@@ -1,0 +1,110 @@
+{
+  "agent_name": "Universal Agent",
+  "version": "1.0.0",
+  "description": "وكيل ذكي شامل لإدارة جميع المهام الإدارية والعمليات التلقائية",
+  "language": "ar",
+  "timezone": "UTC+2",
+  "max_tasks": 500,
+  "auto_save": true,
+  "save_interval": 300,
+  "modules": {
+    "email": {
+      "enabled": true,
+      "imap_host": "imap.gmail.com",
+      "smtp_host": "smtp.gmail.com",
+      "max_emails_per_run": 50,
+      "auto_process": true
+    },
+    "file_processing": {
+      "enabled": true,
+      "supported_formats": [
+        ".pdf",
+        ".docx",
+        ".doc",
+        ".txt",
+        ".xlsx",
+        ".csv",
+        ".jpg",
+        ".png"
+      ],
+      "auto_archive": true,
+      "archive_days": 30
+    },
+    "pdf_extraction": {
+      "enabled": true,
+      "ocr_enabled": true,
+      "extract_images": true,
+      "extract_tables": true
+    },
+    "automation": {
+      "enabled": true,
+      "max_concurrent_tasks": 10,
+      "retry_attempts": 3,
+      "retry_delay": 5
+    },
+    "scheduling": {
+      "enabled": true,
+      "timezone_aware": true,
+      "recurring_tasks": true
+    },
+    "reporting": {
+      "enabled": true,
+      "formats": ["json", "pdf", "excel"],
+      "auto_email_reports": false,
+      "report_schedule": "weekly"
+    },
+    "database": {
+      "enabled": true,
+      "type": "sqlite",
+      "path": "agent_database.db"
+    },
+    "logging": {
+      "level": "INFO",
+      "file": "agent.log",
+      "max_size_mb": 100,
+      "backup_count": 5
+    }
+  },
+  "notification_settings": {
+    "email_notifications": false,
+    "desktop_notifications": true,
+    "log_notifications": true,
+    "error_alert_level": "ERROR"
+  },
+  "performance_settings": {
+    "max_memory_mb": 512,
+    "cpu_throttle": false,
+    "cache_enabled": true,
+    "cache_size_mb": 100
+  },
+  "security": {
+    "enable_encryption": false,
+    "api_key_required": true,
+    "ssl_verify": true,
+    "allowed_origins": []
+  },
+  "integrations": {
+    "shopify": {
+      "enabled": true,
+      "store_name": "",
+      "api_version": "2024-01"
+    },
+    "google_drive": {
+      "enabled": true
+    },
+    "telegram": {
+      "enabled": false,
+      "bot_token": ""
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    }
+  },
+  "default_behaviors": {
+    "on_startup": "auto_process_pending_tasks",
+    "on_error": "log_and_continue",
+    "on_task_complete": "update_status_and_notify",
+    "on_failure": "retry_with_backoff"
+  }
+}

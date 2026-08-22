@@ -1,0 +1,84 @@
+{
+  "agent_name": "Vantory Agent",
+  "version": "2.0.0",
+  "language": "ar",
+  "timezone": "Asia/Riyadh",
+  "max_tasks": 100,
+  "auto_save": true,
+  "modules": {
+    "email": {
+      "enabled": true
+    },
+    "file_processing": {
+      "enabled": true
+    },
+    "pdf_extraction": {
+      "enabled": true
+    },
+    "automation": {
+      "enabled": true
+    },
+    "scheduling": {
+      "enabled": true
+    },
+    "reporting": {
+      "enabled": true
+    },
+    "shopify": {
+      "enabled": true
+    }
+  },
+  "store_info": {
+    "name": "Vantory Store",
+    "url": "uk1msh-1p.myshopify.com",
+    "currency": "AED",
+    "timezone": "Asia/Riyadh",
+    "language": "ar"
+  },
+  "shopify": {
+    "api_token": "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",
+    "shop_url": "uk1msh-1p.myshopify.com",
+    "api_version": "2024-01"
+  },
+  "operations": {
+    "daily_tasks": {
+      "process_orders": {
+        "enabled": true,
+        "frequency": "every_hour",
+        "priority": "high"
+      },
+      "send_confirmations": {
+        "enabled": true,
+        "frequency": "immediate",
+        "priority": "high"
+      },
+      "check_inventory": {
+        "enabled": true,
+        "frequency": "every_6_hours",
+        "low_stock_threshold": 20
+      },
+      "generate_daily_report": {
+        "enabled": true,
+        "time": "23:00",
+        "send_email": true,
+        "recipients": [
+          "admin@vantory.local"
+        ]
+      }
+    }
+  },
+  "notifications": {
+    "email": {
+      "enabled": true,
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587
+    }
+  },
+  "security": {
+    "enable_encryption": true,
+    "backup_enabled": true,
+    "backup_frequency": "daily",
+    "log_all_activities": true,
+    "api_key_required": true
+  }
+}
