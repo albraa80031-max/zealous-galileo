@@ -11,16 +11,25 @@
       "name": "Vantory Shield | المحفظة الذكية الفاخرة",
       "category": "محافظ",
       "description": "محفظة فاخرة مع حماية RFID و GPS تتبع مدمج",
-      "base_price": 299.00,
-      "compare_price": 450.00,
-      "profit_margin": 0.50,
+      "base_price": 299.0,
+      "compare_price": 450.0,
+      "profit_margin": 0.5,
       "stock": {
         "VT-SHIELD-BLK": 50,
         "VT-SHIELD-SLV": 35,
         "VT-SHIELD-BRN": 40
       },
-      "variants": ["أسود (Black)", "فضي (Silver)", "بني (Brown)"],
-      "features": ["حماية RFID", "تتبع GPS", "جلد فاخر", "ضمان سنتين"],
+      "variants": [
+        "أسود (Black)",
+        "فضي (Silver)",
+        "بني (Brown)"
+      ],
+      "features": [
+        "حماية RFID",
+        "تتبع GPS",
+        "جلد فاخر",
+        "ضمان سنتين"
+      ],
       "rating": 4.8,
       "reviews": 245
     },
@@ -30,15 +39,23 @@
       "name": "Vantory Slim | المحفظة الرقيقة",
       "category": "محافظ",
       "description": "محفظة رقيقة وخفيفة بتصميم مينيمالي",
-      "base_price": 199.00,
-      "compare_price": 299.00,
+      "base_price": 199.0,
+      "compare_price": 299.0,
       "profit_margin": 0.45,
       "stock": {
         "VT-SLIM-GRY": 75,
         "VT-SLIM-BLK": 60
       },
-      "variants": ["رمادي (Grey)", "أسود (Black)"],
-      "features": ["تصميم أنيق", "خفيفة الوزن", "ألومنيوم", "ضمان سنة"],
+      "variants": [
+        "رمادي (Grey)",
+        "أسود (Black)"
+      ],
+      "features": [
+        "تصميم أنيق",
+        "خفيفة الوزن",
+        "ألومنيوم",
+        "ضمان سنة"
+      ],
       "rating": 4.6,
       "reviews": 189
     },
@@ -48,16 +65,25 @@
       "name": "Vantory Travel | حقيبة السفر الذكية",
       "category": "حقائب",
       "description": "حقيبة سفر ذكية مع أقسام متعددة وحماية ضد السرقة",
-      "base_price": 599.00,
-      "compare_price": 899.00,
+      "base_price": 599.0,
+      "compare_price": 899.0,
       "profit_margin": 0.55,
       "stock": {
-        "VT-TRAVEL-BLK": 20,
+        "VT-TRAVEL-BLK": 19,
         "VT-TRAVEL-BRN": 18,
         "VT-TRAVEL-GRY": 15
       },
-      "variants": ["أسود (Black)", "بني (Brown)", "رمادي (Grey)"],
-      "features": ["أقسام متعددة", "حماية ضد السرقة", "مادة مقاومة الماء", "ضمان 3 سنوات"],
+      "variants": [
+        "أسود (Black)",
+        "بني (Brown)",
+        "رمادي (Grey)"
+      ],
+      "features": [
+        "أقسام متعددة",
+        "حماية ضد السرقة",
+        "مادة مقاومة الماء",
+        "ضمان 3 سنوات"
+      ],
       "rating": 4.9,
       "reviews": 127
     },
@@ -67,16 +93,25 @@
       "name": "Vantory Clutch | محفظة اليد الفاخرة",
       "category": "محافظ",
       "description": "محفظة يد فاخرة مع تصميم عصري وألوان متعددة",
-      "base_price": 349.00,
-      "compare_price": 549.00,
+      "base_price": 349.0,
+      "compare_price": 549.0,
       "profit_margin": 0.52,
       "stock": {
         "VT-CLUTCH-BLK": 30,
         "VT-CLUTCH-RED": 25,
         "VT-CLUTCH-GOLD": 20
       },
-      "variants": ["أسود (Black)", "أحمر (Red)", "ذهبي (Gold)"],
-      "features": ["تصميم عصري", "جيوب متعددة", "حزام يد مريح", "ضمان سنتين"],
+      "variants": [
+        "أسود (Black)",
+        "أحمر (Red)",
+        "ذهبي (Gold)"
+      ],
+      "features": [
+        "تصميم عصري",
+        "جيوب متعددة",
+        "حزام يد مريح",
+        "ضمان سنتين"
+      ],
       "rating": 4.7,
       "reviews": 98
     },
@@ -86,16 +121,25 @@
       "name": "Vantory Premium Belt | حزام فاخر",
       "category": "إكسسوارات",
       "description": "حزام جلدي فاخر مع مشبك معدني عالي الجودة",
-      "base_price": 179.00,
-      "compare_price": 299.00,
+      "base_price": 179.0,
+      "compare_price": 299.0,
       "profit_margin": 0.48,
       "stock": {
         "VT-BELT-BLK": 40,
         "VT-BELT-BRN": 35,
         "VT-BELT-TAN": 30
       },
-      "variants": ["أسود (Black)", "بني (Brown)", "بيج (Tan)"],
-      "features": ["جلد أصلي", "مشبك معدني", "مقاسات متعددة", "ضمان سنة"],
+      "variants": [
+        "أسود (Black)",
+        "بني (Brown)",
+        "بيج (Tan)"
+      ],
+      "features": [
+        "جلد أصلي",
+        "مشبك معدني",
+        "مقاسات متعددة",
+        "ضمان سنة"
+      ],
       "rating": 4.5,
       "reviews": 156
     },
@@ -105,16 +149,25 @@
       "name": "Vantory Smart Keychain | حامل مفاتيح ذكي",
       "category": "إكسسوارات",
       "description": "حامل مفاتيح ذكي مع نظام تتبع GPS",
-      "base_price": 89.00,
-      "compare_price": 149.00,
-      "profit_margin": 0.50,
+      "base_price": 89.0,
+      "compare_price": 149.0,
+      "profit_margin": 0.5,
       "stock": {
         "VT-KEYCHAIN-BLK": 80,
         "VT-KEYCHAIN-SLV": 70,
         "VT-KEYCHAIN-BLUE": 60
       },
-      "variants": ["أسود (Black)", "فضي (Silver)", "أزرق (Blue)"],
-      "features": ["نظام تتبع GPS", "بطارية 30 يوم", "مقاوم الماء", "ضمان سنة"],
+      "variants": [
+        "أسود (Black)",
+        "فضي (Silver)",
+        "أزرق (Blue)"
+      ],
+      "features": [
+        "نظام تتبع GPS",
+        "بطارية 30 يوم",
+        "مقاوم الماء",
+        "ضمان سنة"
+      ],
       "rating": 4.4,
       "reviews": 342
     },
@@ -124,16 +177,25 @@
       "name": "Vantory Card Holder | حامل البطاقات",
       "category": "إكسسوارات",
       "description": "حامل بطاقات بسيط وأنيق مع حماية RFID",
-      "base_price": 59.00,
-      "compare_price": 99.00,
+      "base_price": 59.0,
+      "compare_price": 99.0,
       "profit_margin": 0.45,
       "stock": {
         "VT-CARDHOLDER-BLK": 100,
         "VT-CARDHOLDER-SLV": 85,
         "VT-CARDHOLDER-ROSE": 70
       },
-      "variants": ["أسود (Black)", "فضي (Silver)", "وردي (Rose Gold)"],
-      "features": ["حماية RFID", "يحمل 10 بطاقات", "جيب نقود", "ضمان سنة"],
+      "variants": [
+        "أسود (Black)",
+        "فضي (Silver)",
+        "وردي (Rose Gold)"
+      ],
+      "features": [
+        "حماية RFID",
+        "يحمل 10 بطاقات",
+        "جيب نقود",
+        "ضمان سنة"
+      ],
       "rating": 4.3,
       "reviews": 267
     },
@@ -143,16 +205,25 @@
       "name": "Vantory Phone Wallet | غلاف الهاتف مع محفظة",
       "category": "إكسسوارات",
       "description": "غلاف هاتف فاخر مع جيب محفظة مدمج",
-      "base_price": 129.00,
-      "compare_price": 199.00,
+      "base_price": 129.0,
+      "compare_price": 199.0,
       "profit_margin": 0.49,
       "stock": {
         "VT-PHONE-CASE-BLK": 45,
         "VT-PHONE-CASE-BRN": 40,
         "VT-PHONE-CASE-BLUE": 35
       },
-      "variants": ["أسود (Black)", "بني (Brown)", "أزرق (Blue)"],
-      "features": ["متوافق مع iPhone و Android", "جيب محفظة", "حماية كاملة", "ضمان سنة"],
+      "variants": [
+        "أسود (Black)",
+        "بني (Brown)",
+        "أزرق (Blue)"
+      ],
+      "features": [
+        "متوافق مع iPhone و Android",
+        "جيب محفظة",
+        "حماية كاملة",
+        "ضمان سنة"
+      ],
       "rating": 4.6,
       "reviews": 203
     },
@@ -162,14 +233,21 @@
       "name": "Vantory Gift Set | مجموعة هدية Shield + Slim",
       "category": "مجموعات هدايا",
       "description": "مجموعة هدية فاخرة تتضمن محفظة Shield و Slim",
-      "base_price": 449.00,
-      "compare_price": 698.00,
+      "base_price": 449.0,
+      "compare_price": 698.0,
       "profit_margin": 0.54,
       "stock": {
         "VT-GIFT-SET-SHIELD-SLIM": 25
       },
-      "variants": ["مجموعة واحدة فقط"],
-      "features": ["تغليف فاخر", "بطاقة شكر مخصصة", "صندوق هدية فاخر", "شهادة ضمان"],
+      "variants": [
+        "مجموعة واحدة فقط"
+      ],
+      "features": [
+        "تغليف فاخر",
+        "بطاقة شكر مخصصة",
+        "صندوق هدية فاخر",
+        "شهادة ضمان"
+      ],
       "rating": 4.9,
       "reviews": 45
     },
@@ -179,14 +257,21 @@
       "name": "Vantory Premium Set | المجموعة الفاخرة الكاملة",
       "category": "مجموعات هدايا",
       "description": "مجموعة فاخرة تتضمن Shield + Clutch + Belt + Keychain",
-      "base_price": 999.00,
-      "compare_price": 1549.00,
+      "base_price": 999.0,
+      "compare_price": 1549.0,
       "profit_margin": 0.56,
       "stock": {
         "VT-GIFT-SET-PREMIUM": 10
       },
-      "variants": ["مجموعة واحدة فقط"],
-      "features": ["4 منتجات فاخرة", "تغليف فاخر جداً", "شهادة أصالة", "ضمان شامل 3 سنوات"],
+      "variants": [
+        "مجموعة واحدة فقط"
+      ],
+      "features": [
+        "4 منتجات فاخرة",
+        "تغليف فاخر جداً",
+        "شهادة أصالة",
+        "ضمان شامل 3 سنوات"
+      ],
       "rating": 5.0,
       "reviews": 23
     },
@@ -196,15 +281,23 @@
       "name": "Vantory Protective Case | غلاف الحماية",
       "category": "إكسسوارات",
       "description": "غلاف حماية قوي للمحافظ الذكية",
-      "base_price": 49.00,
-      "compare_price": 79.00,
+      "base_price": 49.0,
+      "compare_price": 79.0,
       "profit_margin": 0.47,
       "stock": {
         "VT-PROTECTIVE-CASE-BLK": 120,
         "VT-PROTECTIVE-CASE-RED": 100
       },
-      "variants": ["أسود (Black)", "أحمر (Red)"],
-      "features": ["مادة مقاومة الصدمات", "حماية من الخدوش", "تهوية ممتازة", "ضمان سنة"],
+      "variants": [
+        "أسود (Black)",
+        "أحمر (Red)"
+      ],
+      "features": [
+        "مادة مقاومة الصدمات",
+        "حماية من الخدوش",
+        "تهوية ممتازة",
+        "ضمان سنة"
+      ],
       "rating": 4.2,
       "reviews": 134
     },
@@ -214,16 +307,25 @@
       "name": "Vantory Portable Charger | شاحن محمول",
       "category": "إكسسوارات",
       "description": "شاحن محمول بسعة 10000 mAh بتصميم أنيق",
-      "base_price": 149.00,
-      "compare_price": 249.00,
+      "base_price": 149.0,
+      "compare_price": 249.0,
       "profit_margin": 0.51,
       "stock": {
         "VT-POWER-BANK-BLK": 50,
         "VT-POWER-BANK-SLV": 45,
         "VT-POWER-BANK-GOLD": 40
       },
-      "variants": ["أسود (Black)", "فضي (Silver)", "ذهبي (Gold)"],
-      "features": ["سعة 10000 mAh", "شحن سريع", "منفذان USB", "ضمان سنتين"],
+      "variants": [
+        "أسود (Black)",
+        "فضي (Silver)",
+        "ذهبي (Gold)"
+      ],
+      "features": [
+        "سعة 10000 mAh",
+        "شحن سريع",
+        "منفذان USB",
+        "ضمان سنتين"
+      ],
       "rating": 4.7,
       "reviews": 189
     },
@@ -233,14 +335,21 @@
       "name": "Vantory Premium Cables | مجموعة الكابلات",
       "category": "إكسسوارات",
       "description": "مجموعة كابلات شحن فاخرة (Lightning + USB-C)",
-      "base_price": 79.00,
-      "compare_price": 129.00,
+      "base_price": 79.0,
+      "compare_price": 129.0,
       "profit_margin": 0.46,
       "stock": {
         "VT-CABLE-SET-1": 150
       },
-      "variants": ["مجموعة واحدة فقط"],
-      "features": ["كابل Lightning + USB-C", "متين جداً", "سرعة شحن عالية", "ضمان سنة"],
+      "variants": [
+        "مجموعة واحدة فقط"
+      ],
+      "features": [
+        "كابل Lightning + USB-C",
+        "متين جداً",
+        "سرعة شحن عالية",
+        "ضمان سنة"
+      ],
       "rating": 4.4,
       "reviews": 218
     },
@@ -250,14 +359,21 @@
       "name": "Vantory Screen Protector | حامي الشاشة",
       "category": "إكسسوارات",
       "description": "حامي شاشة زجاجي مقسّى للهواتف الذكية",
-      "base_price": 39.00,
-      "compare_price": 69.00,
+      "base_price": 39.0,
+      "compare_price": 69.0,
       "profit_margin": 0.44,
       "stock": {
         "VT-SCREEN-PROTECTOR-SET": 200
       },
-      "variants": ["مجموعة تغطية كاملة"],
-      "features": ["زجاج مقسّى 9H", "حماية من الخدوش", "سهل التركيب", "ضمان سنة"],
+      "variants": [
+        "مجموعة تغطية كاملة"
+      ],
+      "features": [
+        "زجاج مقسّى 9H",
+        "حماية من الخدوش",
+        "سهل التركيب",
+        "ضمان سنة"
+      ],
       "rating": 4.1,
       "reviews": 345
     }
@@ -293,7 +409,7 @@
     "total_categories": 4,
     "average_price": 239.21,
     "average_rating": 4.54,
-    "total_stock": 1325,
-    "total_value_aed": 317425.00
+    "total_stock": 1817,
+    "total_value_aed": 317425.0
   }
 }

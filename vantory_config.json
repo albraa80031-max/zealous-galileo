@@ -1,153 +1,45 @@
 {
+  "agent_name": "Vantory Agent",
+  "version": "2.0.0",
+  "language": "ar",
+  "timezone": "Asia/Riyadh",
+  "max_tasks": 100,
+  "auto_save": true,
+  "modules": {
+    "email": {
+      "enabled": true
+    },
+    "file_processing": {
+      "enabled": true
+    },
+    "pdf_extraction": {
+      "enabled": true
+    },
+    "automation": {
+      "enabled": true
+    },
+    "scheduling": {
+      "enabled": true
+    },
+    "reporting": {
+      "enabled": true
+    },
+    "shopify": {
+      "enabled": true
+    }
+  },
   "store_info": {
     "name": "Vantory Store",
     "url": "uk1msh-1p.myshopify.com",
-    "currency": "SAR",
+    "currency": "AED",
     "timezone": "Asia/Riyadh",
     "language": "ar"
   },
-  "products": [
-    {
-      "id": "VT-SHIELD",
-      "name": "Vantory Shield | المحفظة الذكية الفاخرة",
-      "description": "محفظة فاخرة مع حماية RFID و GPS",
-      "base_price": 299.00,
-      "compare_price": 450.00,
-      "profit_margin": 0.50,
-      "variants": ["Black", "Silver", "Brown"],
-      "category": "محافظ"
-    },
-    {
-      "id": "VT-SLIM",
-      "name": "Vantory Slim | المحفظة الرقيقة",
-      "description": "محفظة رقيقة وخفيفة بتصميم مينيمالي",
-      "base_price": 199.00,
-      "compare_price": 299.00,
-      "profit_margin": 0.45,
-      "variants": ["Grey", "Black"],
-      "category": "محافظ"
-    },
-    {
-      "id": "VT-TRAVEL",
-      "name": "Vantory Travel | حقيبة السفر الذكية",
-      "description": "حقيبة سفر ذكية مع حماية ضد السرقة",
-      "base_price": 599.00,
-      "compare_price": 899.00,
-      "profit_margin": 0.55,
-      "variants": ["Black", "Brown", "Grey"],
-      "category": "حقائب"
-    },
-    {
-      "id": "VT-CLUTCH",
-      "name": "Vantory Clutch | محفظة اليد الفاخرة",
-      "description": "محفظة يد فاخرة مع تصميم عصري",
-      "base_price": 349.00,
-      "compare_price": 549.00,
-      "profit_margin": 0.52,
-      "variants": ["Black", "Red", "Gold"],
-      "category": "محافظ"
-    },
-    {
-      "id": "VT-BELT",
-      "name": "Vantory Premium Belt | حزام فاخر",
-      "description": "حزام جلدي فاخر مع مشبك معدني",
-      "base_price": 179.00,
-      "compare_price": 299.00,
-      "profit_margin": 0.48,
-      "variants": ["Black", "Brown", "Tan"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-KEYCHAIN",
-      "name": "Vantory Smart Keychain | حامل مفاتيح ذكي",
-      "description": "حامل مفاتيح ذكي مع نظام تتبع GPS",
-      "base_price": 89.00,
-      "compare_price": 149.00,
-      "profit_margin": 0.50,
-      "variants": ["Black", "Silver", "Blue"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-CARDHOLDER",
-      "name": "Vantory Card Holder | حامل البطاقات",
-      "description": "حامل بطاقات مع حماية RFID",
-      "base_price": 59.00,
-      "compare_price": 99.00,
-      "profit_margin": 0.45,
-      "variants": ["Black", "Silver", "Rose Gold"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-PHONE-CASE",
-      "name": "Vantory Phone Wallet | غلاف الهاتف مع محفظة",
-      "description": "غلاف هاتف فاخر مع جيب محفظة",
-      "base_price": 129.00,
-      "compare_price": 199.00,
-      "profit_margin": 0.49,
-      "variants": ["Black", "Brown", "Blue"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-GIFT-SET-1",
-      "name": "Vantory Gift Set | مجموعة هدية Shield + Slim",
-      "description": "مجموعة هدية فاخرة تتضمن محفظتين",
-      "base_price": 449.00,
-      "compare_price": 698.00,
-      "profit_margin": 0.54,
-      "variants": ["Standard"],
-      "category": "مجموعات هدايا"
-    },
-    {
-      "id": "VT-GIFT-SET-2",
-      "name": "Vantory Premium Set | المجموعة الفاخرة الكاملة",
-      "description": "مجموعة فاخرة 4 منتجات",
-      "base_price": 999.00,
-      "compare_price": 1549.00,
-      "profit_margin": 0.56,
-      "variants": ["Standard"],
-      "category": "مجموعات هدايا"
-    },
-    {
-      "id": "VT-PROTECTIVE-CASE",
-      "name": "Vantory Protective Case | غلاف الحماية",
-      "description": "غلاف حماية قوي للمحافظ",
-      "base_price": 49.00,
-      "compare_price": 79.00,
-      "profit_margin": 0.47,
-      "variants": ["Black", "Red"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-POWER-BANK",
-      "name": "Vantory Portable Charger | شاحن محمول",
-      "description": "شاحن محمول 10000 mAh بتصميم أنيق",
-      "base_price": 149.00,
-      "compare_price": 249.00,
-      "profit_margin": 0.51,
-      "variants": ["Black", "Silver", "Gold"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-CABLE-SET",
-      "name": "Vantory Premium Cables | مجموعة الكابلات",
-      "description": "مجموعة كابلات شحن فاخرة",
-      "base_price": 79.00,
-      "compare_price": 129.00,
-      "profit_margin": 0.46,
-      "variants": ["Standard"],
-      "category": "إكسسوارات"
-    },
-    {
-      "id": "VT-SCREEN-PROTECTOR",
-      "name": "Vantory Screen Protector | حامي الشاشة",
-      "description": "حامي شاشة زجاجي مقسّى",
-      "base_price": 39.00,
-      "compare_price": 69.00,
-      "profit_margin": 0.44,
-      "variants": ["Standard"],
-      "category": "إكسسوارات"
-    }
-  ],
+  "shopify": {
+    "api_token": "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",
+    "shop_url": "uk1msh-1p.myshopify.com",
+    "api_version": "2024-01"
+  },
   "operations": {
     "daily_tasks": {
       "process_orders": {
@@ -169,117 +61,24 @@
         "enabled": true,
         "time": "23:00",
         "send_email": true,
-        "recipients": ["admin@vantory.local"]
+        "recipients": [
+          "admin@vantory.local"
+        ]
       }
-    },
-    "order_processing": {
-      "auto_confirmation": true,
-      "confirmation_delay": 5,
-      "confirmation_email_template": "vantory_confirmation.html",
-      "track_shipping": true,
-      "shipping_notification": true
-    },
-    "inventory_management": {
-      "auto_update": true,
-      "sync_with_shopify": true,
-      "low_stock_alert": true,
-      "alert_threshold": 20,
-      "reorder_point": 50
-    },
-    "customer_service": {
-      "auto_reply": true,
-      "reply_delay_minutes": 5,
-      "categorize_inquiries": true,
-      "priority_keywords": ["شكوى", "complaint", "urgent"],
-      "support_email": "support@vantory.local"
     }
   },
   "notifications": {
     "email": {
       "enabled": true,
       "smtp_host": "smtp.gmail.com",
-      "smtp_port": 587,
-      "notifications": [
-        {
-          "type": "low_inventory",
-          "recipients": ["admin@vantory.local"],
-          "frequency": "daily"
-        },
-        {
-          "type": "new_order",
-          "recipients": ["admin@vantory.local"],
-          "frequency": "immediate"
-        },
-        {
-          "type": "daily_report",
-          "recipients": ["admin@vantory.local"],
-          "frequency": "daily",
-          "time": "09:00"
-        }
-      ]
-    },
-    "sms": {
-      "enabled": false,
-      "api_key": "",
-      "alert_types": ["urgent_order", "high_value_order"]
-    },
-    "push": {
-      "enabled": true,
-      "alert_types": ["order_completed", "low_inventory"]
-    }
-  },
-  "analytics": {
-    "track_sales": true,
-    "track_revenue": true,
-    "track_customer_satisfaction": true,
-    "generate_reports": {
-      "daily": true,
-      "weekly": true,
-      "monthly": true
-    },
-    "export_format": ["json", "csv", "pdf"],
-    "store_history": true,
-    "history_retention_days": 365
-  },
-  "integrations": {
-    "shopify": {
-      "enabled": true,
-      "api_version": "2024-01",
-      "sync_interval": "every_30_minutes"
-    },
-    "email": {
-      "enabled": true,
-      "providers": ["gmail", "outlook"]
-    },
-    "payment_gateway": {
-      "enabled": true,
-      "automatic_settlement": true
-    },
-    "shipping": {
-      "enabled": true,
-      "auto_generate_labels": true,
-      "notify_customer": true
+      "smtp_port": 587
     }
   },
   "security": {
     "enable_encryption": true,
     "backup_enabled": true,
     "backup_frequency": "daily",
-    "backup_retention_days": 30,
     "log_all_activities": true,
     "api_key_required": true
-  },
-  "performance": {
-    "max_concurrent_orders": 50,
-    "batch_process": true,
-    "cache_enabled": true,
-    "cache_ttl_minutes": 30
-  },
-  "alerts": {
-    "high_order_value_threshold": 1000,
-    "suspicious_order_threshold": 5000,
-    "inventory_critical_level": 10,
-    "daily_target_orders": 10,
-    "daily_target_revenue": 3000
   }
 }
