@@ -14,7 +14,8 @@
       "base_price": 299.00,
       "compare_price": 450.00,
       "profit_margin": 0.50,
-      "variants": ["Black", "Silver", "Brown"]
+      "variants": ["Black", "Silver", "Brown"],
+      "category": "محافظ"
     },
     {
       "id": "VT-SLIM",
@@ -23,7 +24,128 @@
       "base_price": 199.00,
       "compare_price": 299.00,
       "profit_margin": 0.45,
-      "variants": ["Grey", "Black"]
+      "variants": ["Grey", "Black"],
+      "category": "محافظ"
+    },
+    {
+      "id": "VT-TRAVEL",
+      "name": "Vantory Travel | حقيبة السفر الذكية",
+      "description": "حقيبة سفر ذكية مع حماية ضد السرقة",
+      "base_price": 599.00,
+      "compare_price": 899.00,
+      "profit_margin": 0.55,
+      "variants": ["Black", "Brown", "Grey"],
+      "category": "حقائب"
+    },
+    {
+      "id": "VT-CLUTCH",
+      "name": "Vantory Clutch | محفظة اليد الفاخرة",
+      "description": "محفظة يد فاخرة مع تصميم عصري",
+      "base_price": 349.00,
+      "compare_price": 549.00,
+      "profit_margin": 0.52,
+      "variants": ["Black", "Red", "Gold"],
+      "category": "محافظ"
+    },
+    {
+      "id": "VT-BELT",
+      "name": "Vantory Premium Belt | حزام فاخر",
+      "description": "حزام جلدي فاخر مع مشبك معدني",
+      "base_price": 179.00,
+      "compare_price": 299.00,
+      "profit_margin": 0.48,
+      "variants": ["Black", "Brown", "Tan"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-KEYCHAIN",
+      "name": "Vantory Smart Keychain | حامل مفاتيح ذكي",
+      "description": "حامل مفاتيح ذكي مع نظام تتبع GPS",
+      "base_price": 89.00,
+      "compare_price": 149.00,
+      "profit_margin": 0.50,
+      "variants": ["Black", "Silver", "Blue"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-CARDHOLDER",
+      "name": "Vantory Card Holder | حامل البطاقات",
+      "description": "حامل بطاقات مع حماية RFID",
+      "base_price": 59.00,
+      "compare_price": 99.00,
+      "profit_margin": 0.45,
+      "variants": ["Black", "Silver", "Rose Gold"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-PHONE-CASE",
+      "name": "Vantory Phone Wallet | غلاف الهاتف مع محفظة",
+      "description": "غلاف هاتف فاخر مع جيب محفظة",
+      "base_price": 129.00,
+      "compare_price": 199.00,
+      "profit_margin": 0.49,
+      "variants": ["Black", "Brown", "Blue"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-GIFT-SET-1",
+      "name": "Vantory Gift Set | مجموعة هدية Shield + Slim",
+      "description": "مجموعة هدية فاخرة تتضمن محفظتين",
+      "base_price": 449.00,
+      "compare_price": 698.00,
+      "profit_margin": 0.54,
+      "variants": ["Standard"],
+      "category": "مجموعات هدايا"
+    },
+    {
+      "id": "VT-GIFT-SET-2",
+      "name": "Vantory Premium Set | المجموعة الفاخرة الكاملة",
+      "description": "مجموعة فاخرة 4 منتجات",
+      "base_price": 999.00,
+      "compare_price": 1549.00,
+      "profit_margin": 0.56,
+      "variants": ["Standard"],
+      "category": "مجموعات هدايا"
+    },
+    {
+      "id": "VT-PROTECTIVE-CASE",
+      "name": "Vantory Protective Case | غلاف الحماية",
+      "description": "غلاف حماية قوي للمحافظ",
+      "base_price": 49.00,
+      "compare_price": 79.00,
+      "profit_margin": 0.47,
+      "variants": ["Black", "Red"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-POWER-BANK",
+      "name": "Vantory Portable Charger | شاحن محمول",
+      "description": "شاحن محمول 10000 mAh بتصميم أنيق",
+      "base_price": 149.00,
+      "compare_price": 249.00,
+      "profit_margin": 0.51,
+      "variants": ["Black", "Silver", "Gold"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-CABLE-SET",
+      "name": "Vantory Premium Cables | مجموعة الكابلات",
+      "description": "مجموعة كابلات شحن فاخرة",
+      "base_price": 79.00,
+      "compare_price": 129.00,
+      "profit_margin": 0.46,
+      "variants": ["Standard"],
+      "category": "إكسسوارات"
+    },
+    {
+      "id": "VT-SCREEN-PROTECTOR",
+      "name": "Vantory Screen Protector | حامي الشاشة",
+      "description": "حامي شاشة زجاجي مقسّى",
+      "base_price": 39.00,
+      "compare_price": 69.00,
+      "profit_margin": 0.44,
+      "variants": ["Standard"],
+      "category": "إكسسوارات"
     }
   ],
   "operations": {

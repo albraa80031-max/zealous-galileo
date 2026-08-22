@@ -48,6 +48,7 @@ class VantoryAgent(UniversalAgent):
             "name": "Vantory Shield | المحفظة الذكية الفاخرة",
             "price": 299.00,
             "compare_price": 450.00,
+            "category": "محافظ",
             "variants": ["Black", "Silver", "Brown"],
             "features": ["RFID Protection", "GPS Tracking", "Premium Leather"]
         },
@@ -55,8 +56,105 @@ class VantoryAgent(UniversalAgent):
             "name": "Vantory Slim | المحفظة الرقيقة",
             "price": 199.00,
             "compare_price": 299.00,
+            "category": "محافظ",
             "variants": ["Grey", "Black"],
             "features": ["Minimalist Design", "Aluminum", "Lightweight"]
+        },
+        "VT-TRAVEL": {
+            "name": "Vantory Travel | حقيبة السفر الذكية",
+            "price": 599.00,
+            "compare_price": 899.00,
+            "category": "حقائب",
+            "variants": ["Black", "Brown", "Grey"],
+            "features": ["Anti-theft", "Water-resistant", "Multiple compartments"]
+        },
+        "VT-CLUTCH": {
+            "name": "Vantory Clutch | محفظة اليد الفاخرة",
+            "price": 349.00,
+            "compare_price": 549.00,
+            "category": "محافظ",
+            "variants": ["Black", "Red", "Gold"],
+            "features": ["Premium Design", "Multiple pockets", "Comfortable handle"]
+        },
+        "VT-BELT": {
+            "name": "Vantory Premium Belt | حزام فاخر",
+            "price": 179.00,
+            "compare_price": 299.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Brown", "Tan"],
+            "features": ["Genuine Leather", "Metal Buckle", "Adjustable"]
+        },
+        "VT-KEYCHAIN": {
+            "name": "Vantory Smart Keychain | حامل مفاتيح ذكي",
+            "price": 89.00,
+            "compare_price": 149.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Silver", "Blue"],
+            "features": ["GPS Tracking", "Waterproof", "30-day battery"]
+        },
+        "VT-CARDHOLDER": {
+            "name": "Vantory Card Holder | حامل البطاقات",
+            "price": 59.00,
+            "compare_price": 99.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Silver", "Rose Gold"],
+            "features": ["RFID Protection", "Compact design", "Holds 10 cards"]
+        },
+        "VT-PHONE-CASE": {
+            "name": "Vantory Phone Wallet | غلاف الهاتف مع محفظة",
+            "price": 129.00,
+            "compare_price": 199.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Brown", "Blue"],
+            "features": ["Built-in wallet", "Full protection", "Easy access"]
+        },
+        "VT-GIFT-SET-1": {
+            "name": "Vantory Gift Set | مجموعة هدية Shield + Slim",
+            "price": 449.00,
+            "compare_price": 698.00,
+            "category": "مجموعات هدايا",
+            "variants": ["Standard"],
+            "features": ["Gift wrapping", "Thank you card", "2-year warranty"]
+        },
+        "VT-GIFT-SET-2": {
+            "name": "Vantory Premium Set | المجموعة الفاخرة الكاملة",
+            "price": 999.00,
+            "compare_price": 1549.00,
+            "category": "مجموعات هدايا",
+            "variants": ["Standard"],
+            "features": ["4 premium items", "Luxury packaging", "Certificate of authenticity"]
+        },
+        "VT-PROTECTIVE-CASE": {
+            "name": "Vantory Protective Case | غلاف الحماية",
+            "price": 49.00,
+            "compare_price": 79.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Red"],
+            "features": ["Shock resistant", "Scratch protection", "Ventilation"]
+        },
+        "VT-POWER-BANK": {
+            "name": "Vantory Portable Charger | شاحن محمول",
+            "price": 149.00,
+            "compare_price": 249.00,
+            "category": "إكسسوارات",
+            "variants": ["Black", "Silver", "Gold"],
+            "features": ["10000 mAh", "Fast charging", "Dual USB ports"]
+        },
+        "VT-CABLE-SET": {
+            "name": "Vantory Premium Cables | مجموعة الكابلات",
+            "price": 79.00,
+            "compare_price": 129.00,
+            "category": "إكسسوارات",
+            "variants": ["Standard"],
+            "features": ["Lightning + USB-C", "High quality", "1-year warranty"]
+        },
+        "VT-SCREEN-PROTECTOR": {
+            "name": "Vantory Screen Protector | حامي الشاشة",
+            "price": 39.00,
+            "compare_price": 69.00,
+            "category": "إكسسوارات",
+            "variants": ["Standard"],
+            "features": ["Tempered glass", "9H hardness", "Easy installation"]
         }
     }
 
