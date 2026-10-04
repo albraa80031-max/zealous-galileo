@@ -24,6 +24,16 @@ base="$(cat "$base_file" 2>/dev/null || true)"
 now="$(sha1sum "$case_file" 2>/dev/null | awk '{print $1}')"
 [ "$now" != "$base" ] && exit 0
 
+# Gate 3b — the case file was committed recently, so the work IS recorded.
+# Restart-proof: holds however the per-session baseline was taken.
+recent_window="${LEGAL_HOOK_RECENT_SECONDS:-21600}"   # 6 hours
+last_commit="$(git -C "$root" log -1 --format=%ct -- \
+               .claude/legal/CASE_FILE.md 2>/dev/null || echo 0)"
+if [ "${last_commit:-0}" -gt 0 ]; then
+  age=$(( $(date +%s) - last_commit ))
+  [ "$age" -lt "$recent_window" ] && exit 0
+fi
+
 # Gate 4 — only a session of real length is worth interrupting.
 [ -z "$transcript" ] || [ ! -f "$transcript" ] && exit 0
 lines="$(wc -l < "$transcript" 2>/dev/null || echo 0)"
