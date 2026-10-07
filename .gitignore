@@ -88,3 +88,4 @@ scratchpad/**/*.pdf
 scratchpad/**/*.docx
 scratchpad/**/__pycache__/
 scratchpad/**/t.*
+scratchpad/**/src/
