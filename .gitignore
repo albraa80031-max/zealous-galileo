@@ -81,3 +81,10 @@ Thumbs.db
 temp/
 tmp/
 cache/
+
+# scratchpad: مخرجات مبنية وملفات فحص — المصدر وحده يُحفظ
+scratchpad/**/*.png
+scratchpad/**/*.pdf
+scratchpad/**/*.docx
+scratchpad/**/__pycache__/
+scratchpad/**/t.*
