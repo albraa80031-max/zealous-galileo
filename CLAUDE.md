@@ -47,10 +47,12 @@
 
 ## إنتاج المستندات العربية (PDF/Word)
 
-الأدوات الجاهزة في `scratchpad/urgent_memo/build_expert_memo.py`:
-`render_docx(blocks, path, title)` و `render_pdf(blocks, path)`.
+الأداة في **`tools/arabic_render.py`** (مثبَّتة في الريبو — لا تضع مُصيِّراً في `scratchpad/` فهو يضيع مع الحاوية):
+`render_docx(blocks, path, title)` و `render_pdf(blocks, path, title)`.
+الكتل: `('h1'|'h2'|'p'|'li'|'spacer'|'table', value)`.
 
 - الخط: `"Amiri", "FreeSans", serif` — Amiri ضروري لتشكيل العربية
 - RTL في docx: `w:bidi` على `pPr`، `w:bidiVisual` على `tblPr`
-- **فخّ:** أرقام مفصولة بمسافات تنعكس بصرياً في RTL. اكتبها بلا مسافات.
+- **فخّ:** الأرقام والتواريخ والرموز المختلطة (`AJCAPCICIVS2026/0000279`) تنعكس بصرياً في RTL. الدالة `iso()` تعزلها بـ U+2066…U+2069 تلقائياً.
+- **فخّ ثانٍ:** ترقيم صفحات PDF بصيغة `counter(page) " / " counter(pages)` ينعكس — استعمل `counter(page)` وحده.
 - **إلزامي:** بعد كل بناء، حوّل الصفحات إلى PNG واقرأها بصرياً قبل التسليم
