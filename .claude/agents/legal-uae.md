@@ -50,14 +50,38 @@ tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch
 
 ## إنتاج المستندات
 
-استعمل `render_docx` و `render_pdf` من `scratchpad/urgent_memo/build_expert_memo.py`.
-نموذج المحتوى كتل: `("h1"|"sub"|"h2"|"h3"|"p"|"li"|"note", text)` و `("kv", [(k,v)…])` و `("table", HDR, rows)` و `("sig", None)` و `("pb", None)`.
+استعمل `render_docx(blocks, path, title=None)` و `render_pdf(blocks, path, title=None)` من **`tools/arabic_render.py`**:
 
-**إلزامي قبل التسليم:** حوّل كل صفحة إلى PNG بـ `page.get_pixmap(dpi=100)` واقرأها بصرياً. العربية تنكسر بصمت.
+```python
+import sys; sys.path.insert(0, "tools")
+from arabic_render import render_docx, render_pdf
+```
 
-**فخّان متكرران:**
-- أرقام مفصولة بمسافات تنعكس بصرياً في RTL — اكتبها بلا مسافات
+**نموذج الكتل — ستة أنواع لا غير:**
+
+| النوع | القيمة | ملاحظة |
+|---|---|---|
+| `('h1', نص)` | سلسلة | عنوان رئيسي، توسيط |
+| `('h2', نص)` | سلسلة | عنوان فرعي، محاذاة يمين |
+| `('p', نص)` | سلسلة | فقرة |
+| `('li', نص)` | سلسلة | بند بنقطة |
+| `('spacer', None)` | — | فراغ |
+| `('table', صفوف)` | قائمة قوائم — **الصفّ الأول هو الرأس** | لا تمرّر الرأس منفصلاً |
+
+> ⚠️ **أي اسم كتلة خارج هذه الستة يُتجاهَل بصمت ولا يظهر في المستند.**
+> الأسماء `sub` · `h3` · `note` · `kv` · `sig` · `pb` **غير مدعومة** — كانت مذكورة هنا خطأً حتى 15/10/2026.
+
+**إلزامي قبل التسليم:** حوّل كل صفحة إلى PNG واقرأها بصرياً:
+```python
+import pymupdf
+d = pymupdf.open(path)
+for i, pg in enumerate(d): pg.get_pixmap(dpi=110).save(f'chk{i+1}.png')
+```
+العربية تنكسر بصمت، وخمسة أفخاخ RTL موثقة في `CLAUDE.md` قسم «إنتاج المستندات العربية».
+
+**وفخّان في الحساب:**
 - عدّ الأحرف: `len(open(f, encoding='utf-8').read())` لا `wc -m`
+- لا تكتب علامات Markdown (`**`) داخل نصّ كتلة — تُطبع حرفياً
 
 ## عند الانتهاء
 
