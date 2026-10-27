@@ -19,7 +19,7 @@ from pathlib import Path
 CASE_FILE = Path(".claude/legal/CASE_FILE.md")
 HEADING = re.compile(r"^(#{2,6})\s+(.*)$")
 # رقم القسم في أول العنوان، مثل «3.3» أو «3.3.1» أو «5.1»
-NUMBER = re.compile(r"^(\d+(?:\.\d+)*)\s")
+NUMBER = re.compile(r"^(\d+(?:\.\d+)*)\.?\s")   # يقبل «3.3 » و«1. » معاً
 
 
 def _headings(lines):
