@@ -20,6 +20,7 @@ BLOCKS = [
     ("li", "بند أول في قائمة"),
     ("li", "بند ثانٍ في قائمة"),
     ("spacer", None),
+    ("pagebreak", None),
     (
         "table",
         [

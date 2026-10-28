@@ -67,7 +67,7 @@ python3 tools/case_section.py --find "24/11"      # أين يقع نصّ، وف�
 
 الأداة في **`tools/arabic_render.py`** (مثبَّتة في الريبو — لا تضع مُصيِّراً في `scratchpad/` فهو يضيع مع الحاوية):
 `render_docx(blocks, path, title)` و `render_pdf(blocks, path, title)`.
-الكتل: `('h1'|'h2'|'p'|'li'|'spacer'|'table', value)`.
+الكتل: `('h1'|'h2'|'p'|'li'|'spacer'|'pagebreak'|'table', value)`.
 
 - الخط: `"Amiri", "FreeSans", serif` — Amiri ضروري لتشكيل العربية
 - RTL في docx: `w:bidi` على `pPr`، `w:bidiVisual` على `tblPr`

@@ -62,6 +62,7 @@ def render_docx(blocks, path, title=None):
         elif kind == 'p':     _para(doc, val)
         elif kind == 'li':    _para(doc, "• " + val, space=4)
         elif kind == 'spacer':doc.add_paragraph()
+        elif kind == 'pagebreak': doc.add_page_break()
         elif kind == 'table':
             t = doc.add_table(rows=0, cols=len(val[0])); t.style = 'Table Grid'
             tblPr = t._tbl.tblPr; tblPr.append(OxmlElement('w:bidiVisual'))
@@ -104,6 +105,7 @@ def render_pdf(blocks, path, title=None):
         elif kind == 'p':     h.append(f"<p>{_esc(val)}</p>")
         elif kind == 'li':    h.append(f"<ul><li>{_esc(val)}</li></ul>")
         elif kind == 'spacer':h.append('<p>&nbsp;</p>')
+        elif kind == 'pagebreak': h.append('<div style="page-break-before:always"></div>')
         elif kind == 'table':
             h.append('<table>')
             for ri,row in enumerate(val):

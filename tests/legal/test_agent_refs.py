@@ -2,7 +2,7 @@
 
 import re
 
-SUPPORTED = {"h1", "h2", "p", "li", "spacer", "table"}
+SUPPORTED = {"h1", "h2", "p", "li", "spacer", "pagebreak", "table"}
 # مسار فعلي فقط: يحوي "/" — لا اسم ملف مجرّد ورد في نصّ
 PATH_RE = re.compile(r"`([A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)+\.(?:py|md|json|sh))`")
 # اسم كتلة معلن — يلتقط الصيغتين: `('h1', …)` و `("h1"|"sub"|…)`
