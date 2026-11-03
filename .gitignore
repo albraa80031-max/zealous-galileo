@@ -89,3 +89,6 @@ scratchpad/**/*.docx
 scratchpad/**/__pycache__/
 scratchpad/**/t.*
 scratchpad/**/src/
+
+# استثناء: لقطات الأدلة تُحفظ (تضيع مع الحاوية وإلا)
+!scratchpad/**/shots/*.png

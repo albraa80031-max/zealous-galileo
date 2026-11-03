@@ -16,6 +16,7 @@ hafiza_parts = [
     os.path.join(HERE, 'غلاف_الحافظة.pdf'),
     os.path.join(ATT, 'كشف_الحساب_المصدق_صفحات_الدفعات_الخمس.pdf'),
     os.path.join(ATT, 'كشف_بطاقة_نون_6668_صفحتا_قيد_170.pdf'),
+    os.path.join(HERE, 'لقطات_المراسلات.pdf'),
 ]
 H = os.path.join(HERE, 'حافظة_مستندات_6181_2026.pdf')
 merge(hafiza_parts, H)
