@@ -14,7 +14,8 @@ jobs:
 
     strategy:
       matrix:
-        python-version: ['3.9', '3.10', '3.11']
+        # 3.9 حُذفت 15/11/2026: صورة ubuntu-latest صارت 26.04 ولم تعد توفّرها
+        python-version: ['3.10', '3.11']
 
     steps:
     - uses: actions/checkout@v3
