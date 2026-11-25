@@ -20,6 +20,7 @@
 
 import json
 import re
+import subprocess
 from datetime import date
 from pathlib import Path
 
@@ -153,8 +154,32 @@ def find_banned_numbers(draft_text, guard):
     return out
 
 
-def check_structure(text):
-    """عيوب بنيوية في ملف القضايا."""
+CASE_FILE = Path(__file__).resolve().parent.parent / ".claude" / "legal" / "CASE_FILE.md"
+
+
+def _last_write_date(path=CASE_FILE):
+    """تاريخ آخر كتابة فعلية في الملف، من git. ويسقط إلى اليوم إن تعذّر."""
+    try:
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", str(path)],
+            capture_output=True, text=True, timeout=10,
+            cwd=str(Path(__file__).resolve().parent.parent),
+        ).stdout.strip()
+        y, m, d = (int(x) for x in out.split("-"))
+        return date(y, m, d)
+    except Exception:
+        return date.today()
+
+
+def check_structure(text, ref_date=None):
+    """عيوب بنيوية في ملف القضايا.
+
+    ⚠️ `ref_date` هو التاريخ الذي يُقاس عليه «الماضي» — وافتراضه **تاريخ آخر
+    كتابة في الملف**، لا اليوم. ونشأ هذا من خلل رُصد 25/11/2026: كان القياس
+    على `date.today()`، فكلّما مرّ تاريخُ موعدٍ مستقبليٍّ مذكورٍ في الملف
+    (مهلة، جلسة) صار «ماضياً» وسقط الفحص **بلا أي تعديل** — وCI يسقط من
+    تلقائه كل ستّ ساعات. والموعد المستقبلي ليس تطوّراً يستوجب تحديث الترويسة.
+    """
     problems = []
     lines = text.split("\n")
 
@@ -164,8 +189,8 @@ def check_structure(text):
 
     header = next((ln for ln in lines[:8] if "آخر تحديث" in ln), "")
     hdr = DATE.search(header)
-    today = date.today()
-    past = [d for d in DATE.findall(text) if _as_date(d) and _as_date(d) <= today]
+    ref = ref_date or _last_write_date()
+    past = [d for d in DATE.findall(text) if _as_date(d) and _as_date(d) <= ref]
     if hdr and past:
         newest = max(past, key=_as_date)
         if _as_date(hdr.group()) < _as_date(newest):
