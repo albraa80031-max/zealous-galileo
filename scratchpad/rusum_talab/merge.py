@@ -14,23 +14,31 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TALAB = os.path.join(HERE, 'طلب_تأجيل_الرسم_6181_2026.pdf')
-QARAR = os.path.join(HERE, 'قرار_تقسيط_الرسوم_25032026.pdf')
-OUT = os.path.join(HERE, 'طلب_تأجيل_الرسم_6181_2026_مع_المرفق.pdf')
+OUT = os.path.join(HERE, 'طلب_تأجيل_الرسم_6181_2026_مع_المرفقات.pdf')
+
+# المرفقات بترتيب قائمتها في الطلب
+MURFAQAT = [
+    'قرار_تقسيط_الرسوم_25032026.pdf',       # 1 — الدرايف 1SfZWxIlkchnIITJYAJ9vUUrFG-ZSIjiR
+    'قرار_المهلة_1008202610487508.pdf',      # 2 — من البوابة
+    'كتاب_منع_السفر_23092026.pdf',           # 3 — الدرايف 1suPsx1NfD4OBVEchuSwP6LPvKnc1ctBk
+    'احتساب_الرسوم_11112026.pdf',            # 4 — ص4 من الصحيفة بخطّ المحاسب
+]
 
 Q = 85  # ضغط JPEG — الصور الخام تُخرج ملفاً لا يقبله الرفع
 
 
 def main():
-    for f in (TALAB, QARAR):
+    paths = [TALAB] + [os.path.join(HERE, m) for m in MURFAQAT]
+    for f in paths:
         if not os.path.exists(f):
             sys.exit(f'ناقص: {f}')
 
     out = pymupdf.open()
     out.insert_pdf(pymupdf.open(TALAB))
 
-    # المرفق صفحةٌ ممسوحة ضوئياً — تُدرَج صورةً مضغوطة بحجمٍ معقول
-    src = pymupdf.open(QARAR)
-    for pg in src:
+    # المرفقات صفحاتٌ ممسوحة ضوئياً — تُدرَج صوراً مضغوطة بحجمٍ معقول
+    pages = [pg for m in MURFAQAT for pg in pymupdf.open(os.path.join(HERE, m))]
+    for pg in pages:
         pix = pg.get_pixmap(dpi=150)
         im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
         buf = io.BytesIO()
