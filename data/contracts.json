@@ -1,0 +1,60 @@
+{
+  "contracts": [
+    {
+      "id": "CONTRACT_2026_001",
+      "title": "عقد عمل - موظف إداري",
+      "status": "active",
+      "type": "employment",
+      "parties": [
+        "شركة الإمارات للتطوير",
+        "أحمد محمد علي"
+      ],
+      "created_at": "2025-06-10T08:00:00",
+      "updated_at": "2026-08-20T12:00:00",
+      "terms": {
+        "duration": "2 سنة",
+        "salary": 5000,
+        "currency": "AED",
+        "start_date": "2025-06-10",
+        "end_date": "2027-06-10"
+      },
+      "documents": [
+        "DOC_2026_005"
+      ],
+      "notes": "عقد نشط",
+      "renewal_date": "2027-06-10"
+    },
+    {
+      "id": "CONTRACT_2026_002",
+      "title": "عقد توريد السلع",
+      "status": "draft",
+      "type": "supply",
+      "parties": [
+        "شركة الخليج للتجارة",
+        "مصنع البحرين للإنتاج"
+      ],
+      "created_at": "2026-07-01T10:30:00",
+      "updated_at": "2026-08-19T16:45:00",
+      "terms": {
+        "duration": "1 سنة",
+        "value": 100000,
+        "currency": "AED",
+        "start_date": "2026-09-01",
+        "end_date": "2027-09-01"
+      },
+      "documents": [
+        "DOC_2026_006",
+        "DOC_2026_007"
+      ],
+      "notes": "مسودة قيد المراجعة",
+      "renewal_date": null
+    }
+  ],
+  "metadata": {
+    "total_contracts": 2,
+    "active_contracts": 1,
+    "draft_contracts": 1,
+    "expired_contracts": 0,
+    "last_updated": "2026-08-20T12:00:00"
+  }
+}

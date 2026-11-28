@@ -1,0 +1,115 @@
+{
+  "documents": [
+    {
+      "id": "DOC_2026_001",
+      "title": "نسخة من عقد التوظيف الأصلي",
+      "type": "contract",
+      "related_case": "CASE_2026_001",
+      "related_contract": "CONTRACT_2026_001",
+      "created_at": "2026-01-15T10:30:00",
+      "status": "filed",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "توظيف",
+        "عقد"
+      ]
+    },
+    {
+      "id": "DOC_2026_002",
+      "title": "رسالة الشكوى من الموظف",
+      "type": "correspondence",
+      "related_case": "CASE_2026_001",
+      "related_contract": null,
+      "created_at": "2026-01-20T14:20:00",
+      "status": "filed",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "شكوى",
+        "مراسلات"
+      ]
+    },
+    {
+      "id": "DOC_2026_003",
+      "title": "فاتورة الشحنة الأولى",
+      "type": "invoice",
+      "related_case": "CASE_2026_002",
+      "related_contract": "CONTRACT_2026_002",
+      "created_at": "2026-04-10T09:15:00",
+      "status": "filed",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "فاتورة",
+        "شحنة"
+      ]
+    },
+    {
+      "id": "DOC_2026_004",
+      "title": "شهادة الاستلام والرفض",
+      "type": "report",
+      "related_case": "CASE_2026_002",
+      "related_contract": "CONTRACT_2026_002",
+      "created_at": "2026-04-25T11:45:00",
+      "status": "filed",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "تقرير",
+        "استلام"
+      ]
+    },
+    {
+      "id": "DOC_2026_005",
+      "title": "نسخة موقعة من العقد",
+      "type": "contract",
+      "related_case": null,
+      "related_contract": "CONTRACT_2026_001",
+      "created_at": "2025-06-10T08:00:00",
+      "status": "filed",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "توظيف",
+        "عقد موقع"
+      ]
+    },
+    {
+      "id": "DOC_2026_006",
+      "title": "مسودة عقد التوريد",
+      "type": "contract",
+      "related_case": null,
+      "related_contract": "CONTRACT_2026_002",
+      "created_at": "2026-07-01T10:30:00",
+      "status": "draft",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "توريد",
+        "مسودة"
+      ]
+    },
+    {
+      "id": "DOC_2026_007",
+      "title": "شروط التوريد والدفع",
+      "type": "terms",
+      "related_case": null,
+      "related_contract": "CONTRACT_2026_002",
+      "created_at": "2026-07-05T14:00:00",
+      "status": "draft",
+      "file_size": null,
+      "file_path": null,
+      "tags": [
+        "شروط",
+        "توريد"
+      ]
+    }
+  ],
+  "metadata": {
+    "total_documents": 7,
+    "filed_documents": 5,
+    "draft_documents": 2,
+    "last_updated": "2026-08-20T12:00:00"
+  }
+}

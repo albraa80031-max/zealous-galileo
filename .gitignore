@@ -1,0 +1,94 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Data and backups
+data/legal_data.json
+data/export.json
+data/sync_log.json
+*.backup
+*.bak
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Credentials
+credentials.json
+secrets.json
+github_token.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+temp/
+tmp/
+cache/
+
+# scratchpad: مخرجات مبنية وملفات فحص — المصدر وحده يُحفظ
+scratchpad/**/*.png
+scratchpad/**/*.pdf
+scratchpad/**/*.docx
+scratchpad/**/__pycache__/
+scratchpad/**/t.*
+scratchpad/**/src/
+
+# استثناء: لقطات الأدلة تُحفظ (تضيع مع الحاوية وإلا)
+!scratchpad/**/shots/*.png
